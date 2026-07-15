@@ -11,14 +11,14 @@ public class Fact {
     private Integer id;
 
     private String fact;
-    private int year;
+    private int createdBy;
     private String isActive;
 
     public Fact() {}
 
-    public Fact(String fact, int year, String isActive) {
+    public Fact(String fact, int createdBy, String isActive) {
         this.fact = fact;
-        this.year = year;
+        this.createdBy = createdBy;
         this.isActive = isActive;
     }
 
@@ -38,12 +38,12 @@ public class Fact {
         this.fact = fact;
     }
 
-    public int getYear() {
-        return year;
+    public int getCreatedBy() {
+        return createdBy;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
     }
 
     public String getIsActive() {
