@@ -12,14 +12,14 @@ public class Fact {
 
     private String fact;
     private int year;
-    private double price;
+    private String isActive;
 
     public Fact() {}
 
-    public Fact(String fact, int year, double price) {
+    public Fact(String fact, int year, String isActive) {
         this.fact = fact;
         this.year = year;
-        this.price = price;
+        this.isActive = isActive;
     }
 
     public Integer getId() {
@@ -46,11 +46,11 @@ public class Fact {
         this.year = year;
     }
 
-    public double getPrice() {
-        return price;
+    public String getIsActive() {
+        return isActive;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setIsActive(String isActive) {
+        this.isActive = isActive;
     }
 }
